@@ -30,28 +30,24 @@ function readLine() {
  */
 
 function timeConversion(s) {
-    //Input (stdin) : 07:05:45PM
-    //Expected Output : 19:05:45
-    
-    const time = s.split(':');
-    const hour = time[0];
-    const minute = time[1];
-    const second = time[2].split(' ')[0];
-    const ampm = time[2].split(' ')[1];
+    //Input (stdin): 07:05:45PM
+    //Output (stdout): 19:05:45
 
-    if (ampm === 'PM') {
-        if (hour === '12') {
-            return `${hour}:${minute}:${second}`;
-        } else {
-            return `${parseInt(hour) + 12}:${minute}:${second}`; 
+    let lastTwo = s.substring(8)
+    let fullTime = s.substring(0, 8);
+    let times = fullTime.split(':');
+
+    if (lastTwo === 'AM') {
+        if (times[0] === '12') {
+            times[0] = '00';
         }
     } else {
-        if (hour === '12') {
-            return `00:${minute}:${second}`;
-        } else {
-            return `${hour}:${minute}:${second}`;
+        if (times[0] !== '12') {
+            times[0] = parseInt(times[0]) + 12;
         }
     }
+
+    return times.join(':');
 
 }
 
