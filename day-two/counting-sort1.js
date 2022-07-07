@@ -29,24 +29,53 @@ function readLine() {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
+// Challenge
+// Given a list of integers, count and return the number of times each value appears as an array of integers.
+
+// Function Description
+
+// Complete the countingSort function in the editor below.
+
+// countingSort has the following parameter(s):
+
+// arr[n]: an array of integers
+// Returns
+// int[100]: a frequency array
+
 function countingSort(arr) {
-    // Write your code here
-    const count = [];
-    for(let i = 0; i < 100; i++){
-        count[0] = 0;
-    }
-    for(let i = 0; i < arr.length; i++){
-        count[arr[i]]++;
+  
+    if(arr.length < 2) {
+        return arr;
     }
 
-    const processData = input =>{
-        const line = input.split('\n');
-        const arr = line.split(' ').map(arrTemp => parseInt(arrTemp));
-        countingSort(arr);
+    let maxValue = arr[0];
+    
+    for(let i = 1; i < arr.length; i++) {
+        if(arr[i] > maxValue) {
+            maxValue = arr[i];
+        }
     }
 
-    return count[i];
+    const countingArr = new Array(maxValue + 1);
 
+    for(let val of arr) {
+        if(!countingArr[val]) {
+            countingArr[val] = 0;
+        }
+        countingArr[val]++;
+    }
+
+    const resultArr = [];
+
+    for(let i = 0; i < countingArr.length; i++) {
+        while(countingArr[i] > 0) {
+            resultArr.push(i);
+            countingArr[i]--;
+        }
+    }
+
+    return resultArr;
+    
 }
 
 function main() {
