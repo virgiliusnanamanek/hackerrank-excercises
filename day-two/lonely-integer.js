@@ -32,18 +32,18 @@ function readLine() {
 function lonelyinteger(a) {
     // Write your code here
     
-    const map = {};
+    const map = {}; // key: value, value: count
 
-    for (let i = 0; i < a.length; i++) {
-        if (map[a[i]]) {
-            map[a[i]]++;
+    for (let i = 0; i < a.length; i++) { // loop through array
+        if (map[a[i]]) { // if key exists
+            map[a[i]]++; // increment the value of the key
         } else {
-            map[a[i]] = 1;
+            map[a[i]] = 1; // else create a new key
         }
     }
 
-    for (let key in map) {
-        if (map[key] === 1) {
+    for (let key in map) { // loop through map
+        if (map[key] === 1) { // if the value of the key is 1
             return key;
         }
     }
