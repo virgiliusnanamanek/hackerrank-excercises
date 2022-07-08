@@ -15,9 +15,9 @@ int[100]: a frequency array
 
     function countingSort(arr) {
         // your code here
-        let freq = new Array(100).fill(0);
+        let freq = new Array(100).fill(0); // create a frequency array
         for (let i = 0; i < arr.length; i++) {
-            freq[arr[i]]++;
+            freq[arr[i]]++; // increment the frequency of the current element
         }
         return freq;
     }
