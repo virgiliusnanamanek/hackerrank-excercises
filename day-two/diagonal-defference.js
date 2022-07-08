@@ -35,11 +35,11 @@ function diagonalDifference(arr) {
     let rightToLeft = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        leftToRight += arr[i][i];
-        rightToLeft += arr[i][arr.length - i - 1];
+        leftToRight += arr[i][i]; // add the value of the current element to the left to right sum
+        rightToLeft += arr[i][arr.length - i - 1]; // -i - 1 because the array is zero-indexed
     }
 
-    return Math.abs(leftToRight - rightToLeft);
+    return Math.abs(leftToRight - rightToLeft); // return the absolute value of the difference
 
 }
 
