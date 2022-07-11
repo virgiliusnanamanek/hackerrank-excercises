@@ -26,6 +26,10 @@ class Cart {
     count() {
         return this.data.length;
     }
+
+    unique() {
+        return [...new Set(this.data)];
+    }
 }
 
 const cart = new Cart();
