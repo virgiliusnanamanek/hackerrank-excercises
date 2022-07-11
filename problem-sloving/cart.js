@@ -23,14 +23,14 @@ class Cart {
         this.data = this.data.filter(i => i !== item);
     }
 
-    total() {
+    count() {
         return this.data.length;
-    }
-
-    unique() {
-        return [...new Set(this.data)];
     }
 }
 
 const cart = new Cart();
-console.log(cart.isEmpty());
+cart.add('a');
+cart.add('b');
+cart.add('b');
+cart.add('d');
+console.log(cart);
