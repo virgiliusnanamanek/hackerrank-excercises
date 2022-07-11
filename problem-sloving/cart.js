@@ -16,7 +16,10 @@ class Cart {
     }
 
     add(item) {
-        this.data.push(item);
+        //only add if not already in cart
+        if(!this.data.includes(item)) {
+            this.data.push(item);
+        }
     }
 
     remove(item) {
@@ -27,9 +30,6 @@ class Cart {
         return this.data.length;
     }
 
-    unique() {
-        return [...new Set(this.data)];
-    }
 }
 
 const cart = new Cart();
@@ -37,4 +37,6 @@ cart.add('a');
 cart.add('b');
 cart.add('b');
 cart.add('d');
+cart.add('e');
+cart.add('e');
 console.log(cart);
