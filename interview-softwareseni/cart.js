@@ -34,6 +34,7 @@ class Cart {
 
 /**
  * If we consider the above snippet, the returned value is i !== item because if the id matches, i !== item will evaluate to false and returning false will remove the item.
+ * So, we will filter and return the array, which does not include the item valued object. This is because we are using the filter method to remove the item.
  */
 
 const cart = new Cart();
