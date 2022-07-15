@@ -23,7 +23,7 @@ class Cart {
     }
 
     remove(item) {
-        this.data = this.data.filter(i => i !== item); // remove item from the array
+        this.data = this.data.filter(i => i !== item); // remove item from the array programmatically
     }
 
     count() {
@@ -32,6 +32,10 @@ class Cart {
 
 }
 
+/**
+ * If we consider the above snippet, the returned value is i !== item because if the id matches, i !== item will evaluate to false and returning false will remove the item.
+ */
+
 const cart = new Cart();
 cart.add('a');
 cart.add('b');
@@ -39,4 +43,8 @@ cart.add('b');
 cart.add('d');
 cart.add('e');
 cart.add('e');
-console.log(cart);
+cart.remove('b');
+cart.remove('e');
+console.log(cart.count());
+console.log(cart.isEmpty());
+console.log(cart.data);
