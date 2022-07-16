@@ -1,19 +1,20 @@
 /**
  * jumpingOnClouds has the following parameter(s):
-int c[n]: the cloud types along the path
-int k: the length of one jump
-Returns
-int: the energy level remaining.
+int c[n]: an array of binary integers
+Returns:
+int: the minimum number of jumps required
  */
 
-    function jumpingOnClouds(c, k) {
-        // your code here
-        let jump = 0;
-        let i =0; 
-
-        do {
-          jump += k;
-          i = c[i+2] == 0 ? i+2 : i+1;
-        } while (i < c.length - 1);
-        return jump;
+  function jumpingOnClouds(c) {
+    let jumps = 0;
+    let i = 0;
+    while (i < c.length - 1) {
+      if (i + 2 < c.length && c[i + 2] === 0) {
+        i += 2;
+      } else {
+        i++;
+      }
+      jumps++;
     }
+    return jumps;
+  }
