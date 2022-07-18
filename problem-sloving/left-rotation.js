@@ -11,9 +11,9 @@ int a'[n]: the rotated array
 
 
 function rotLeft(a, d) {
-  let result = [];
-  for (let i = 0; i < a.length; i++) {
-    result[(i + d) % a.length] = a[i];
+  while(d){
+    a.push(a.shift()); // shift() removes the first element of an array and returns that element
+    d--; // decrement d
   }
-  return result;
+  return a;
 }
