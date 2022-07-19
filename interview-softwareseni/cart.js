@@ -23,7 +23,7 @@ class Cart {
     }
 
     remove(item) {
-        this.data = this.data.filter(i => i !== item); // remove item from the array programmatically
+        this.data = this.data.filter(i => i !== item); // remove the item from the array if it is in the array.
     }
 
     count() {
