@@ -10,7 +10,3 @@ console.log(output2);
 // variant two
 var output_final = square(double(2));
 console.log(output_final);
-
-
-
-
