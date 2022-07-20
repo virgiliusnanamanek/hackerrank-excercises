@@ -1,0 +1,77 @@
+ECMAScript
+ECMAScript adalah spesifikasi yang ditentukan dalam ECMA-262 untuk membuat bahasa skrip.
+ECMAScript memberikan aturan, detail, dan pedoman yang harus dipatuhi oleh bahasa skrip agar dianggap sesuai dengan ECMAScript.
+
+JavaScript
+JavaScript adalah bahasa skrip yang dibuat sesuai dengan spesifikasi ECMAScript.
+Dengan membaca spesifikasi ECMAScript, Anda mempelajari cara membuat bahasa skrip.
+Dengan membaca dokumentasi JavaScript, Anda mempelajar cara menggunakan bahasa skrip.
+
+Bahasa Skrip
+Bahasa skrip adalah bahasa pemrograman yang tidak memerlukan langkah kompilasi. Semua bahasa skrip adalah bahasa pemrograman, namun tidak semua bahasa pemrograman adalah bahasa skrip.
+Bahasa skrip menggunakan program yang dikenal sebagai interpreter untuk menerjemahkan kode tanpa memerlukan langkah kompilasi.
+Mislanya, untuk menjalankan kode bahasa pemrograman C diperlukan langkah untuk mengkompilasi terlebih dahulu, sedangkan bahasa skrip seperti PHP dan JavaScript tidak perlu dikompilasi.
+
+Typescript
+TypeScript adalah bahasa pemrograman yang dikembangkan dan dikelola oleh Microsoft. Ini adalah superset sintaksis JavaScript yang ketat dan menambahkan pengetikan statis opsional ke bahasa. Hal ini dirancang untuk pengembangan aplikasi besar dan transpiles ke JavaScript.
+
+NodeJS
+Node.js adalah runtime environment untuk JavaScript yang bersifat open-source dan cross-platform. Dengan Node.js kita dapat menjalankan kode JavaScript di mana pun, tidak hanya terbatas pada lingkungan browser. Node.js menjalankan V8 JavaScript engine (yang juga merupakan inti dari Google Chrome) di luar browser.
+
+Webpack
+Webpack adalah bundler modul sumber terbuka dan gratis untuk JavaScript. Ini dibuat terutama untuk JavaScript, tetapi dapat mengubah aset front-end seperti HTML, CSS, dan gambar jika pemuat yang sesuai disertakan. Webpack mengambil modul dengan dependensi dan menghasilkan aset statis yang mewakili modul tersebut.
+
+Closure
+closure merupakan sebuah fungsi yang dieksekusi oleh fungsi lainnya(nested functions) sehingga fungsi tersebut dapat mengakses/merekam variable didalam lexical scope pada fungsi induk(parent function)
+
+Array
+Array merupakan struktur data yang digunakan untuk menyimpan kumpulan nilai dalam satu tempat atau variabel.
+
+Object
+Objek adalah kumpulan properti, properti adalah pasangan antara nama (kunci) dan nilai. Nilai properti bisa berupa data primitif maupun non-primitif, termasuk fungsi dan objek.
+
+HOF
+Higher-order function atau fungsi orde tinggi adalah fungsi yang 1 menerima fungsi lain sebagai parameternya, dan/atau 2) mengembalikan fungsi lain sebagai keluarannya.
+
+CMS
+perangkat lunak yang digunakan untuk menambahkan atau memanipulasi isi dari suatu situs web. Umumnya, sebuah CMS terdiri dari dua elemen: aplikasi manajemen isi aplikasi pengiriman isi.
+
+Frameworks
+ framework adalah kerangka kerja untuk mengembangkan aplikasi berbasis website maupun desktop. Kerangka kerja disini sangat membantu developer dalam menuliskan sebuah dengan lebih terstruktur dan tersusun rapi. Kerangka kerja diciptakan untuk mempermudah kinerja dari programmer.
+
+library
+Jawaban singkatnya React.js itu sebuah Library, mengapa dikatakan library? Ya karena dari dokumentasi React nya sendiri menyebut bahwa React itu sebuah Library dari bahasa JavaScript yg digunakan untuk keperluan pembuatan antarmuka pengguna (User Interface) yang interaktif.
+
+JSL
+JavaScript Library (JSL) adalah sekumpulan kode dalam bahasa pemrograman JavaScript yang sudah dituliskan. Kode ini memiliki fungsi tertentu yang spesifik, serta bisa digunakan oleh siapa pun.
+
+Client Side and Server Side
+Server side merupakan sistem yang berjalan di server, sedang client side merupakan sistem yang berjalan di web browser pengguna.
+
+Method
+Method JavaScript adalah tindakan yang dapat dilakukan pada objek. Method JavaScript adalah properti yang berisi definisi fungsi. Metohd adalah fungsi yang disimpan sebagai properti objek
+
+OOP
+paradigma pemrograman berdasarkan konsep "objek", yang dapat berisi data, dalam bentuk field atau dikenal juga sebagai atribut; serta kode, dalam bentuk fungsi/prosedur atau dikenal juga sebagai method
+
+Attribute
+Attribute merupakan karakteristik dari suatu class. Attribut ini berupa suatu variable yang terletak tepat di dalam class. Variable yang berupa attribut ini juga disebut dengan variable global (kebalikan dari variable lokal) karena variabel global tersebut bisa diakses di setiap behavioral.
+
+Promise
+Promise adalah Sebuah mekanisme baru pada fitur javascript / ES6 yang merepresentasikan sebuah object request pengolahan data yang dilakukan secara asynchronous seperti ajax, dan promise ini mewakili sebuah operasi yang belum selesai, tetapi diharapkan di masa mendatang.
+
+Hoisting
+Hoisting adalah pemanggilan variabel yang tidak didefinisikan, tetapi didefinisikan pada saat eksekusi. Dalam bahasa skrip atau sisi server lain, variabel atau fungsi harus dideklarasikan sebelum menggunakannya. Dalam JavaScript, nama variabel dan fungsi dapat digunakan sebelum mendeklarasikannya.
+
+Inheritance
+Inheritance dalam OOP adalah sebuah proses dimana sebuah class mewariskan property dan methodnya ke class lain atau childnya. 
+
+Encapsulation
+Encapsulation atau enkapsulasi adalah cara untuk membatasi akses langsung ke properti atau method dari sebuah objek. Encapsulation memungkinkan Anda untuk menghindari akses ke luar dari objek.
+Enkapsulasi mencakup gagasan bahwa data(property atau method) suatu objek tidak boleh langsung diekspos.
+
+Polymorphism
+Polymorphism adalah kemampuan untuk membuat variabel, fungsi, atau objek yang memiliki banyak bentuk. 
+
+Abstraction
+Abstraction adalah sebuah teknik untuk menyembunyikan detail tertentu dari sebuah objek dan hanya menampilkan fungsionalitas atau fitur penting dari objek tersebut. 
