@@ -8,18 +8,18 @@
 
 class Cart {
     constructor() {
-        this.data = []; // initialize data to an empty array
+        this.data = []; // initialize data to an empty array to store the items
     }
 
     isEmpty() {
-        return this.data.length === 0; // return true if data is empty
+        return this.data.length === 0; // return true if data is empty and false if data is not empty
     }
 
     add(item) {
         //only add if not already in cart
         if(!this.data.includes(item)) { // if already in cart, do not add
             this.data.push(item); // add item to the end of the array
-        }
+        } 
     }
 
     remove(item) {
